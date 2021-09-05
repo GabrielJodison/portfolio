@@ -16,7 +16,6 @@ html, body{
     height: 100%;
     overflow-x: hidden;
     background-color: #333647;
-
 }
 
 
@@ -32,7 +31,6 @@ html, body{
 #logo-fonte span{
     font-size: 1em;
     color: #FF8000;
-
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -45,7 +43,6 @@ html, body{
 .navbar-light .navbar-nav .nav-link:hover {
     color: white;
 }
-
 
 .navbar-light .navbar-nav .nav-link::before {
     content: '';
@@ -64,12 +61,10 @@ html, body{
     background-color: #FF8000;
     position: absolute;
     bottom: 35px;
-
 }
 
 span{
     color: #FF8000;
-
 }
 
 /* home section */
@@ -128,6 +123,8 @@ span{
     width: 82%;
 }
 
+
+
 /* about */
 #about {
     background: #282A39;
@@ -155,6 +152,22 @@ span{
     height: 80vh;
 }
 
+.card{
+    margin: 20px 20px;
+}
+
+.bar-progress{
+    padding: 16px 20px;
+}
+
+.progresso-barra{
+    padding: 10px 0px;
+    
+}
+
+
+
+
 /* projects */
 
 
@@ -178,31 +191,56 @@ span{
     background: #282A39;
 }
 
-ul {
-    
-    list-style: none;
-    text-decoration: none;
-  
-}
-
 .midia-sociais{
-    margin-top: 20%;
+    margin-top: 8%;
 }
 
+#contact .row ,p {
+    padding-top: 20px;
+    color: #bbbbbb;
+}
 
-
+#contact .row ,h6 {
+    padding-top: 20px;
+    color: white;
+}
 
 
 
 /* footer */
 footer{
     background: var(--orange-color) ;
-    padding: 50px 0px 50px 0px;
-    position:relative
+    padding: 16px 0px 30px 0px;
+    position:relative;
 }
 
-.rodape a{
-    text-decoration: none;
-    color: #282A39;
-
+#icon-color{
+    color: white;
+    margin: 8px;
 }
+
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+   
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #bbbbbb; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8b4600; 
+  }
