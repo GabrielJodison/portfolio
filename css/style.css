@@ -137,11 +137,10 @@ span{
     padding-bottom: 50px;
 }
 
-.card{
-    background: #464a61;
-    text-decoration: white;
-    margin-top: 20px;
+.download{
+    margin-top: 150px;
 }
+
 
 
 
@@ -153,18 +152,29 @@ span{
     height: 80vh;
 }
 
-.card{
-    margin: 20px 20px;
-}
-
 .bar-progress{
     padding: 16px 20px;
 }
 
 .progresso-barra{
     padding: 10px 0px;
-    
 }
+
+.progress-bar{
+     
+     background-color: #e69749; ;
+
+}
+
+.card{
+    background: #464a61;
+    text-decoration: white;
+    margin: 20px 20px;
+
+}
+
+
+
 hr{
     margin: 60px;
     border: 0;
