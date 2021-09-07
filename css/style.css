@@ -15,7 +15,7 @@
 html, body{
     height: 100%;
     overflow-x: hidden;
-    background-color: #333647;
+    background-color: var(--background-color);
 }
 
 
@@ -30,7 +30,7 @@ html, body{
 
 #logo-fonte span{
     font-size: 1em;
-    color: #FF8000;
+    color: var(--orange-color);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -48,7 +48,7 @@ html, body{
     content: '';
     width: 0px;
     height: 0px;
-    background-color: #FF8000;
+    background-color:var(--orange-color);
     position: absolute;
     transition: 0.5s;
     bottom: 35px;
@@ -58,13 +58,13 @@ html, body{
     content: '';
     height: 2px;
     width: 34px;
-    background-color: #FF8000;
+    background-color: var(--orange-color);
     position: absolute;
     bottom: 35px;
 }
 
 span{
-    color: #FF8000;
+    color: var(--orange-color);
 }
 
 /* home section */
@@ -133,7 +133,8 @@ span{
 
 .title{
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .card{
@@ -164,7 +165,45 @@ span{
     padding: 10px 0px;
     
 }
+hr{
+    margin: 60px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent); 
+}
 
+/* ir para o top */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(122, 122, 122, 0.24);
+    text-decoration: none;
+    z-index: 999;
+}
+.button::after {
+    content: "";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+.button:hover::after {
+    margin-top:-8px;
+    
+}
+
+#btn-top{
+    text-decoration: none;
+    color:var(--orange-color);
+}
 
 
 
@@ -172,12 +211,13 @@ span{
 
 
 #project {
-    
     display: flex;
-    align-items: center;
-    height: 80vh;
+    
 }
 
+.card-deck{
+    padding-bottom: 20px;
+}
 
 
 /* contact */
@@ -203,6 +243,25 @@ span{
 #contact .row ,h6 {
     padding-top: 20px;
     color: white;
+}
+
+#enviar::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    background-color: var(--orange-color);
+    position: absolute;
+    transition: 0.5s;
+    bottom: 15px;
+}
+
+#enviar:hover::before {
+    content: '';
+    height: 2px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    bottom: 15px;
 }
 
 
